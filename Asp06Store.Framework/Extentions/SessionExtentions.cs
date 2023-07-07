@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 
-namespace Asp06Store.ShopUI.Extentions
+namespace Asp07Store.ShopUI.Extentions
 {
     public static class SessionExtentions
     {

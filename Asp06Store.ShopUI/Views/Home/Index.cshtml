@@ -1,7 +1,7 @@
 ﻿@model ProductListViewModel
-<h1>Wellcome to ASP.NET Core 06</h1>
+<h1>Wellcome to ASP.NET Core 07</h1>
 
-@foreach (var item in Model.Data.Data)
+@foreach (var item in Model.Data!.Data)
 {
     @Html.Partial("ProductSummary",item)
 }

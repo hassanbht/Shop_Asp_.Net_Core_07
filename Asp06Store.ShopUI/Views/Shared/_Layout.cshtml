@@ -10,8 +10,8 @@
 <body>
     <div class="row p-1 m-1">
         <div class="col-3">
-            <vc:category-side-box></vc:category-side-box>
-            <vc:basket-summary></vc:basket-summary>
+            @await Component.InvokeAsync("CategorySideBox")
+            @await Component.InvokeAsync("BasketSummary")
         </div>
         <div class="col-9"> @RenderBody()</div>
 

@@ -1,4 +1,4 @@
-﻿namespace Asp06Store.ShopUI.Models;
+﻿namespace Asp07Store.ShopUI.Models;
 
 public class EfOrderRepository : IOrderRepository
 {

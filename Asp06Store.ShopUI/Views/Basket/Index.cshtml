@@ -13,7 +13,7 @@
     @foreach (var item in Model.Basket.Items)
     {
         <tr>
-            <td>@item.Product.Name</td>
+            <td>@item.Product!.Name</td>
             <td>@item.Product.Price</td>
             <td>@item.Quantity</td>
             <td>@(item.Quantity * item.Product.Price)</td>

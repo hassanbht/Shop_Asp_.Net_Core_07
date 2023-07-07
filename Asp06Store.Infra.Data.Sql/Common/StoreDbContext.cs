@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Asp06Store.ShopUI.Models
+namespace Asp07Store.ShopUI.Models
 {
     public class StoreDbContext : DbContext
     {

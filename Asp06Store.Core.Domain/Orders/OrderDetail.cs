@@ -1,6 +1,6 @@
-﻿namespace Asp06Store.ShopUI.Models
+﻿namespace Asp07Store.ShopUI.Models
 {
-    public class OrderDetail
+    public record OrderDetail
     {
         public int Id { get; set; }
         public Product?  Product { get; set; }

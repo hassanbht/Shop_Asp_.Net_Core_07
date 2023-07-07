@@ -1,11 +1,11 @@
-﻿using Asp06Store.ShopUI.Models;
+﻿using Asp07Store.ShopUI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 
-namespace Asp06Store.ShopUI.Infrastructures
+namespace Shop_Asp.Net.Core_07.ShopUI.Infrastructures
 {
     [HtmlTargetElement("div", Attributes = "page-model")]
 
@@ -23,7 +23,7 @@ namespace Asp06Store.ShopUI.Infrastructures
         public ViewContext ViewContext { get; set; }
         public PageInfo PageModel { get; set; }
         public string PageAction { get; set; }
-        public bool PageClassesEnabled { get; set; } = false;
+        public bool PageClassesEnabled { get; set; } = true;
         public string PageClass { get; set; }
         public string PageClassNormal { get; set; }
         public string PageClassSelected { get; set; }

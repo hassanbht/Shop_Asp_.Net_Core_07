@@ -1,6 +1,6 @@
-﻿namespace Asp06Store.ShopUI.Models
+﻿namespace Asp07Store.ShopUI.Models
 {
-    public class ProductListViewModel
+    public record ProductListViewModel
     {
         public PagedData<Product>? Data { get; set; }
         public string? CurrentCategory { get; set; }

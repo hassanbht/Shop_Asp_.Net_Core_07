@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Asp06Store.ShopUI.Models
+namespace Asp07Store.ShopUI.Models
 {
-    public class CheckoutViewModel
+    public record CheckoutViewModel
     {
         [Required]
         public string? Name { get; set; }

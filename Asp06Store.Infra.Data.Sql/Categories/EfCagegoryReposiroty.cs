@@ -1,4 +1,4 @@
-﻿namespace Asp06Store.ShopUI.Models;
+﻿namespace Asp07Store.ShopUI.Models;
 
 public class EfCagegoryReposiroty : ICategoryRepository
 {
@@ -9,5 +9,5 @@ public class EfCagegoryReposiroty : ICategoryRepository
         this.storeDbContext = storeDbContext;
     }
     public List<string> GetAllCategories() =>
-       storeDbContext.Categories.Select(c => c.Name).ToList();
+       storeDbContext.Categories?.Select(c => c.Name).ToList();
 }

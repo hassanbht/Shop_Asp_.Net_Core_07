@@ -1,4 +1,4 @@
-﻿namespace Asp06Store.ShopUI.Components
+﻿namespace Asp07Store.ShopUI.Components
 {
     public class BasketSummaryViewComponent:ViewComponent
     {

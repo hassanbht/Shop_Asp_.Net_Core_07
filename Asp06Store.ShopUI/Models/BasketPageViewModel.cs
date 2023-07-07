@@ -1,6 +1,6 @@
-﻿namespace Asp06Store.ShopUI.Models
+﻿namespace Asp07Store.ShopUI.Models
 {
-    public class BasketPageViewModel
+    public record BasketPageViewModel
     {
         public Basket Basket { get; set; }
         public string ReturnUrl { get; set; }

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Asp06Store.ShopUI.Controllers
+namespace Asp07Store.ShopUI.Controllers
 {
     public class OrderController : Controller
     {

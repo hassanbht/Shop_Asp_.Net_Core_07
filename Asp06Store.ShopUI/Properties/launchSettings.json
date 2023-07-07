@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "Asp06Store.ShopUI": {
+    "Asp07Store.ShopUI": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

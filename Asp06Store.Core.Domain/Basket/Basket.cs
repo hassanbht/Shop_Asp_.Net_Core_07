@@ -1,6 +1,6 @@
-﻿namespace Asp06Store.ShopUI.Models;
+﻿namespace Asp07Store.ShopUI.Models;
 
-public class Basket
+public record Basket
 {
     private List<BasketItem> _items = new();
 
@@ -22,10 +22,10 @@ public class Basket
     }
 
     public virtual void Remove(Product product) =>
-        _items.RemoveAll(c => c.Product.Id == product.Id);
+        _items.RemoveAll(c => c.Product?.Id == product.Id);
 
     public int TotalPrice() =>
-        _items.Sum(c => c.Product.Price * c.Quantity);
+        _items.Sum(c => c.Product?.Price ?? 0 * c.Quantity);
 
     public virtual void Clear() => _items.Clear();
     

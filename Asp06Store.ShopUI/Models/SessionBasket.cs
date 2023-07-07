@@ -1,6 +1,6 @@
-﻿namespace Asp06Store.ShopUI.Models
+﻿namespace Asp07Store.ShopUI.Models
 {
-    public class SessionBasket : Basket
+    public record SessionBasket : Basket
     {
         private ISession _session;
 

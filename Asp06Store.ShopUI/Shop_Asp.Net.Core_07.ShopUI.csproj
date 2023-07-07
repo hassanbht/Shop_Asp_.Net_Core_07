@@ -16,7 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
+    <Folder Include="Views\Shared\Components\BasketSummary\" />
+    <Folder Include="Views\Shared\Components\CategorySideBox\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
