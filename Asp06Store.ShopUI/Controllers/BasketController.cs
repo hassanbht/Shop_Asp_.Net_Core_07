@@ -14,7 +14,6 @@ public class BasketController : Controller
     {
         BasketPageViewModel basketPageViewModel = new()
         {
-            //Basket = GetBasket(),
             Basket = sessionBasket,
             ReturnUrl = returnUrl
         };
@@ -25,10 +24,7 @@ public class BasketController : Controller
     public IActionResult AddToBasket(int productId, string returnUrl)
     {
         var product = productRepository.GetById(productId);
-        //var basket = GetBasket();
         sessionBasket.Add(product, 1);
-        //basket.Add(product, 1);
-        //SaveBasket(basket);
         return RedirectToAction("Index", new { returnUrl = returnUrl });
     }
 
@@ -36,21 +32,11 @@ public class BasketController : Controller
     public IActionResult RemoveFromBasket(int productId, string returnUrl)
     {
         var product = productRepository.GetById(productId);
-        //var basket = GetBasket();
-        //basket.Remove(product);
-        //SaveBasket(basket);
+
         sessionBasket.Remove(product);
         return RedirectToAction("Index", new { returnUrl = returnUrl });
     }
 
-    //private Basket GetBasket()
-    //{
-    //    return HttpContext.Session.GetJson<Basket>("Basket");
-    //}
 
-    //private void SaveBasket(Basket basket)
-    //{
-    //    HttpContext.Session.SetJson("Basket", basket);
-    //}
 
 }
